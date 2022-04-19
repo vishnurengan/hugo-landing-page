@@ -5,7 +5,9 @@
   "main": "index.html",
   "scripts": {
     "start": "gulp css && hugo server",
-    "deploy": "gulp css && hugo --minify"
+    "deploy": "gulp css && hugo --minify",
+    "build": "npx eleventy",
+    "serve": "npx eleventy --serve"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,8 @@
     "tailwindcss": "^1.4.6"
   },
   "dependencies": {
-    "hugo-bin": "^0.85.3"
+    "@11ty/eleventy": "^1.0.1",
+    "hugo-bin": "^0.85.3",
+    "hugo-installer": "^3.1.0"
   }
 }
